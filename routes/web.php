@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Teste\Teste01Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(Teste01Controller::class)->group(function () {
+    Route::get('/about', "Fabout")->name('about.pagina');
+    Route::get('/contactos', "Fcontactos")->name('contactos.pagina');
 });
