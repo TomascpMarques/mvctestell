@@ -12,7 +12,7 @@
 
     <body>
         <h3>Contactos</h3>
-        <a href="{{route('about.pagina')}}">About</a>
+        <a href="{{route('about.pagina', ['VIdade' => 33])}}">About</a>
     </body>
 
 </html>

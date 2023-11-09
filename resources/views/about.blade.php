@@ -10,7 +10,7 @@
 
 <body>
     <h1>Hello wolrd</h1>
-    <a href="{{route('contactos.pagina')}}">Contactos</a>
+    <a href="{{route('contactos.pagina', ['VIdade' => 18])}}">Contactos</a>
 </body>
 
 </html>
